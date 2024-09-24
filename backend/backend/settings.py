@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'api.apps.ApiConfig', 
 ]
 
 MIDDLEWARE = [
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'loja_uau',        # Nome do banco de dados
+        'USER': 'postgres',              # Usuário padrão do PostgreSQL (ou altere se diferente)
+        'PASSWORD': '18637859',          # Senha que você forneceu
+        'HOST': 'localhost',             # Rodando localmente
+        'PORT': '5432',                  # Porta padrão do PostgreSQL
     }
 }
 
