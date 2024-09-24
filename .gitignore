@@ -1,0 +1,21 @@
+# Ignorar o ambiente virtual do Python
+.venv
+
+# Ignorar arquivos de cache do Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar o arquivo .env (para variáveis de ambiente)
+.env
+
+backend/**/migrations/
+
+.vscode/
+
+front-end/node_modules/
